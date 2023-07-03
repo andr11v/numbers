@@ -1,0 +1,18 @@
+def calculate_average(numbers):
+    total = 0
+    count = 0
+
+    for number in numbers:
+        total += number
+        count += 1
+
+    if count == 0:
+        return 0  # Якщо список порожній, повертаємо 0
+
+    average = total / count
+    return average
+
+# Приклад використання
+my_list = [2, 4, 6, 8, 10]
+result = calculate_average(my_list)
+print("Середнє значення:", result)
